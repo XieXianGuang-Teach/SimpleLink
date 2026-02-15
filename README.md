@@ -51,7 +51,11 @@ location ~ "^/@link=([a-zA-Z0-9]{3,10})$" {
 
 
 7. 开启SSL（非必要，但建议开启，提高安全性）：你的站点 → 设置 → SSL → 免费证书 → 申请证书 → 品牌和验证方法默认 → 勾选全选按钮 → 申请证书 → 等待申请（1分钟左右）→ 开启强制HTTPS
-
+8. 访问网站主页和网站后台，默认管理员凭证：🔐 用户名：admin， 密码：SimpleLink666@
+> ⚠️ 重要安全提示：
+> 首次登录后台后请立即修改密码（编辑 admin.php 中的 ADMIN_PASS 常量）
+> 该密码为代码明文存储，仅适用于内网/测试环境
+> 公网部署务必：修改为高强度密码（建议16位以上含大小写/数字/符号）；通过 .htaccess 限制后台IP访问；将 admin.php 重命名为随机字符串（如 a7f3k9.php）。
 
 ####  **官方博客文章** 
 - [简链SimpleLink 搭建教程](https://www.xiexianguang.com/forum.php?mod=viewthread&tid=49)
